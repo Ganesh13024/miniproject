@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizing Diabetic Retinopathy</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+        }
+        
+        /* Header styles */
+        .header {
+            background-color: #005C99;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .header h1 {
+            margin: 0;
+        }
+        
+        /* Content styles */
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            margin: 30px auto;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content h2 {
+            font-size: 24px;
+            margin-top: 0;
+            background-color: #e0e0e0;
+            color: #000;
+            padding: 10px;
+        }
+        
+        .content p {
+            margin-bottom: 20px;
+        }
+        
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+        
+        .retina-image {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Visualizing Diabetic Retinopathy</h1>
+    </div>
+    <div class="content">
+        <h2>Dear {{uname}},</h2>
+        <p>Retinopathy is a condition that affects the retina, which is the part of the eye that detects light and sends signals to the brain to create visual images. Retinopathy can be caused by a variety of underlying conditions, such as diabetes, high blood pressure, or certain genetic disorders.</p>
+        <h2>{{result}}</h2>
+        <img class="retina-image" src="D:\Sem6\miniproject\project\DeepRetinopathy\input_img.jpeg" alt="Retina Scanned Image" width="40%" height="40%">
+        <p>Best regards,<br>
+        Ganeshkumar M<br>
+        Diabetes Eye Care</p>
+    </div>
+    <div class="footer">
+        <p>Developed By GCE DHARMAPURI</a>.</p>
+    </div>
+</body>
+</html>
